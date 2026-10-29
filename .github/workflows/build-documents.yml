@@ -1,0 +1,44 @@
+name: Build documents
+
+on:
+  pull_request:
+    paths:
+      - 'docs/**/*.md'
+      - 'templates/**/*.md'
+      - '.github/workflows/build-documents.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**/*.md'
+      - 'templates/**/*.md'
+      - '.github/workflows/build-documents.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build PDF and DOCX
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-pandoc@v2
+      - name: Install PDF engine
+        run: sudo apt-get update && sudo apt-get install --yes texlive-xetex
+      - name: Convert Markdown documents
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' source; do
+            relative="${source#*/}"
+            output="build/${relative%.md}"
+            mkdir -p "$(dirname "$output")"
+            pandoc "$source" --from=gfm --standalone --output="${output}.docx"
+            pandoc "$source" --from=gfm --standalone --pdf-engine=xelatex --output="${output}.pdf"
+          done < <(find docs templates -type f -name '*.md' -print0)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: documentation-pdf-docx
+          path: build/
+          if-no-files-found: error
