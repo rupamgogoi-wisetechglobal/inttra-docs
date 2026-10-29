@@ -4,7 +4,7 @@ This page records provenance and maintenance guidance; it is not a substitute fo
 
 | Code list | Authority / source | Usage notes |
 |---|---|---|
-| UN/LOCODE | [UNECE UN/LOCODE](https://unece.org/trade/cefact/UNLOCODE-Download) | Record the release/version used by the interface. Check location and function fields as required by the message profile. |
+| UN/LOCODE | [UNECE UN/LOCODE](https://unlocode.unece.org/publications) | Record the release/version used by the interface. Check location and function fields as required by the message profile. |
 | SCAC | [NMFTA SCAC resources](https://www.nmfta.org/scac) | Confirm current licensing, validity, and carrier identity requirements with the responsible team. |
 
 ## Maintenance

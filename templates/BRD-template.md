@@ -1,13 +1,13 @@
-# Business Requirements Document: <title>
+# Business Requirements Document: `<title>`
 
 | Field | Value |
 |---|---|
 | ID | BRD-BKG-0001 |
 | Status | Draft |
-| Owner | <name or team> |
+| Owner | `<name or team>` |
 | Created | YYYY-MM-DD |
 | Last reviewed | YYYY-MM-DD |
-| Target release | <release or TBD> |
+| Target release | `<release or TBD>` |
 
 ## 1. Purpose
 
@@ -21,23 +21,23 @@ Summarize current workflows, users, systems, and known constraints.
 
 ### Goals
 
-- <Measurable outcome>
+- `<Measurable outcome>`
 
 ### Non-goals
 
-- <Explicitly excluded behavior>
+- `<Explicitly excluded behavior>`
 
 ## 4. Stakeholders and users
 
 | Role | Need / responsibility |
 |---|---|
-| <role> | <need> |
+| `<role>` | `<need>` |
 
 ## 5. Business requirements
 
 | ID | Requirement | Priority | Acceptance criteria |
 |---|---|---|---|
-| BR-1 | <Requirement> | Must / Should / Could | <Observable result> |
+| BR-1 | `<Requirement>` | Must / Should / Could | `<Observable result>` |
 
 ## 6. Workflow and business rules
 
@@ -55,7 +55,7 @@ Record applicable mandates, data-handling constraints, and review needs.
 
 | Type | Description | Owner / resolution |
 |---|---|---|
-| Open question | <Question> | <Owner> |
+| Open question | `<Question>` | `<Owner>` |
 
 ## 10. Acceptance and rollout
 
@@ -65,4 +65,4 @@ Describe validation, rollout, support, and success measures.
 
 | Date | Author | Change |
 |---|---|---|
-| YYYY-MM-DD | <name> | Initial draft |
+| YYYY-MM-DD | `<name>` | Initial draft |

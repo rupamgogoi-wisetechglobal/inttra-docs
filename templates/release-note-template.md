@@ -1,9 +1,9 @@
-# <Release> — <feature or change>
+# `<Release>` — `<feature or change>`
 
 - Date: YYYY-MM-DD
 - Status: Draft
-- Audience: <customer, operations, carrier, internal>
-- Related requirements: <links>
+- Audience: `<customer, operations, carrier, internal>`
+- Related requirements: `<links>`
 
 ## Summary
 
@@ -11,7 +11,7 @@ Describe the change in concise, user-oriented language.
 
 ## What changed
 
-- <Behavior or capability>
+- `<Behavior or capability>`
 
 ## Who is affected
 

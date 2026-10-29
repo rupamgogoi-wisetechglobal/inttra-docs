@@ -1,13 +1,13 @@
-# EDI Implementation Guide: <message / partner>
+# EDI Implementation Guide: `<message / partner>`
 
 | Field | Value |
 |---|---|
-| Guide ID | <stable identifier> |
-| Message | <for example, IFTMIN> |
-| Version / release | <standard version> |
-| Partner / carrier | <name or scope> |
+| Guide ID | `<stable identifier>` |
+| Message | `<for example, IFTMIN>` |
+| Version / release | `<standard version>` |
+| Partner / carrier | `<name or scope>` |
 | Status | Draft |
-| Owner | <name or team> |
+| Owner | `<name or team>` |
 | Last reviewed | YYYY-MM-DD |
 
 ## 1. Purpose and scope
@@ -26,7 +26,7 @@ Describe trigger, exchange, acknowledgements, retry behavior, and expected timin
 
 | Segment / element | Usage | Cardinality | Description |
 |---|---|---|---|
-| <segment> | Required / Conditional / Optional | <min..max> | <meaning> |
+| `<segment>` | Required / Conditional / Optional | `<min..max>` | `<meaning>` |
 
 ## 5. Field-level mapping and code values
 
@@ -48,4 +48,4 @@ List test scenarios, expected outcomes, partner certification requirements, and 
 
 | Version | Date | Author | Change |
 |---|---|---|---|
-| 0.1 | YYYY-MM-DD | <name> | Initial draft |
+| 0.1 | YYYY-MM-DD | `<name>` | Initial draft |
